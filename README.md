@@ -1,5 +1,5 @@
 # TODA-BERT (Task-oriented Dialogue Act BERT)
-Code and models are uploaded as a part of the master's thesis *Supervised Pre-training for Dialogue Act Classifiaction in Task-oriented Dialogue*
+Code and pre-trained model is uploaded as a part of the master's thesis *Supervised Pre-training for Dialogue Act Classifiaction in Task-oriented Dialogue*
 
 TODA-BERT is a BERT-based model for dialogue act classification in task-oriented dialogue. The model is pre-trained in a supervised fashion with a pre-training corpus consisting of the following datasets: 
 - [DSTC 2](https://www.aclweb.org/anthology/W14-4337.pdf)
@@ -11,3 +11,8 @@ TODA-BERT is a BERT-based model for dialogue act classification in task-oriented
 - [E2E](https://arxiv.org/pdf/1807.11125.pdf)
 
 Datasets were aligned to the universal DA schema from [Paul et al.](https://arxiv.org/pdf/1907.03020.pdf) before pre-training. TODA-BERTs output size is 13, the same as the number of user acts in the universal DA schema.
+
+The pre-trained model can be downloaded from the following link:
+- [TODA-BERT](https://drive.google.com/file/d/1GB7yPYhvOAli_10Dt7OE0mgubFfwWfr2/view?usp=sharing)
+
+## Fine-tuning
