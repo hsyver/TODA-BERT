@@ -16,3 +16,23 @@ The pre-trained model can be downloaded from the following link:
 - [TODA-BERT](https://drive.google.com/file/d/1GB7yPYhvOAli_10Dt7OE0mgubFfwWfr2/view?usp=sharing)
 
 ## Fine-tuning
+The provided fine-tuning code assumes data is in .csv format with the fields *utterance*, *DAs*, and *actor*.
+
+Fine-tuning with the TODA-BERT-add architecture:
+```shell
+python toda-bert_finetune.py
+  --output_dir=/path/to/output_dir
+  --train_data_src=/path/to/train_data
+  --test_data_src=/path/to/test_data
+  --load_dir=/path/to/pretrained
+  --add_layer=True
+```
+
+Fine-tuning with the TODA-BERT-filter architecture (recommended if dialogue acts follow the universal DA schema):
+```shell
+python toda-bert_finetune.py
+  --output_dir=/path/to/output_dir
+  --train_data_src=/path/to/train_data
+  --test_data_src=/path/to/test_data
+  --load_dir=/path/to/pretrained
+```
