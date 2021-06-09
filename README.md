@@ -22,9 +22,9 @@ Fine-tuning with the TODA-BERT-add architecture:
 ```shell
 python toda-bert_finetune.py
   --output_dir=/path/to/output_dir
-  --train_data_src=/path/to/train_data
-  --test_data_src=/path/to/test_data
-  --load_dir=/path/to/pretrained
+  --train_data_src=/path/to/train_data.csv
+  --test_data_src=/path/to/test_data.csv
+  --load_src=/path/to/TODA-BERT.pth
   --add_layer=True
 ```
 
@@ -32,7 +32,7 @@ Fine-tuning with the TODA-BERT-filter architecture (recommended if dialogue acts
 ```shell
 python toda-bert_finetune.py
   --output_dir=/path/to/output_dir
-  --train_data_src=/path/to/train_data
-  --test_data_src=/path/to/test_data
-  --load_dir=/path/to/pretrained
+  --train_data_src=/path/to/train_data.csv
+  --test_data_src=/path/to/test_data.csv
+  --load_src=/path/to/TODA-BERT.pth
 ```
