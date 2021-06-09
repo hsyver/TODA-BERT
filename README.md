@@ -18,7 +18,7 @@ The pre-trained model can be downloaded from the following link:
 ## Fine-tuning
 The provided fine-tuning code assumes data is in .csv format with the fields *utterance*, *DAs*, and *actor*.
 
-Fine-tuning with the TODA-BERT-add architecture:
+Fine-tuning with the TODA-BERT-add architecture (Fig. 1):
 ```shell
 python toda-bert_finetune.py
   --output_dir=/path/to/output_dir
@@ -28,7 +28,7 @@ python toda-bert_finetune.py
   --add_layer=True
 ```
 
-Fine-tuning with the TODA-BERT-filter architecture (recommended if dialogue acts follow the universal DA schema):
+Fine-tuning with the TODA-BERT-filter architecture (Fig. 2) (recommended if dialogue acts follow the universal DA schema):
 ```shell
 python toda-bert_finetune.py
   --output_dir=/path/to/output_dir
@@ -36,3 +36,14 @@ python toda-bert_finetune.py
   --test_data_src=/path/to/test_data.csv
   --load_src=/path/to/TODA-BERT.pth
 ```
+<p align="center">
+  <img src="/figures/TODA-BERT-add.png" alt="TODA-BERT-add architecture" width="500"/>
+</p>
+
+<p align="center"><b>Figure 1:</b> The TODA-BERT-add architecture, which fine-tunes TODA-BERT with and added feed forward layer.</p>
+
+<p align="center">
+  <img src="/figures/TODA-BERT-filter.png" alt="TODA-BERT-filter architecture" width="500"/>
+</p>
+
+<p align="center"><b>Figure 2:</b> The TODA-BERT-filter architecture, which fine-tunes TODA-BERT and post-filters outputs to only include those relevant for the target dataset.</p>
