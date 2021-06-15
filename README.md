@@ -2,6 +2,17 @@
 Code and pre-trained model is uploaded as a part of the master's thesis *Supervised Pre-training for Dialogue Act Classifiaction in Task-oriented Dialogue*
 
 TODA-BERT is a BERT-based model for dialogue act classification in task-oriented dialogue. The model is pre-trained in a supervised fashion with a pre-training corpus consisting of the following datasets: 
+
+| **Dataset** | **#Dialogues** | **#Utterances**  | **#Domains** | **Type** |
+| ----------- |:--------------:|:----------------:|:------------:|:--------:|
+| [DSTC 2](https://www.aclweb.org/anthology/W14-4337.pdf) & [3](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/write_up.pdf) | 5,510 | 88,650 | 1 | Spoken |
+| [Frames](https://www.aclweb.org/anthology/W17-5526v2.pdf) | 1,369 | 19,986 | 1 | Written |
+| [MultiWOZ 2.3](https://arxiv.org/pdf/2010.05594.pdf) | 10,438 | 143,048 | 7 | Written |
+| [E2E](https://arxiv.org/pdf/1807.11125.pdf) | 10,087 | 74,686 | 3 | Written |
+| [M2M](https://arxiv.org/pdf/1801.04871.pdf) | 3,008 | 27,120 | 2 | Generated |
+| [SGD](https://arxiv.org/pdf/1909.05855.pdf) | 22,825 | 463,284 | 20 | Generated |
+| **Total** | 53,237 | 816,774 | 24 unique |  |
+
 - [DSTC 2](https://www.aclweb.org/anthology/W14-4337.pdf)
 - [DSTC 3](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/write_up.pdf)
 - [MultiWOZ 2.3](https://arxiv.org/pdf/2010.05594.pdf)
