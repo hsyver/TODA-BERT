@@ -19,7 +19,7 @@ The pre-trained model can be downloaded from the following link:
 - [TODA-BERT](https://drive.google.com/file/d/1GB7yPYhvOAli_10Dt7OE0mgubFfwWfr2/view?usp=sharing)
 
 ## Fine-tuning
-The provided fine-tuning code assumes data is in .csv format with the fields *utterance*, *DAs*, and *actor*.
+The provided fine-tuning code assumes data is in .csv format with the fields *utterance*, *DAs*, and *actor* (see [sample_dialogue.csv](sample_dialogue.csv)).
 
 Fine-tuning with the TODA-BERT-add architecture (Fig. 1):
 ```shell
