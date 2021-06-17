@@ -1,0 +1,23 @@
+actor,utterance,DAs
+User,Find me a one way flight.,['inform']
+Agent,Where are you going?,['request']
+User,I am going to Las Vegas on March 7th.,['inform']
+Agent,Where are you departing from?,['request']
+User,I have zero bags and want to depart from Seattle.,['inform']
+Agent,I found an Alaska Airlines flight with 1 layover that leaves at 7:30 am and costs $215 per person.,['sys-offer']
+User,What else do you have?,['reqalts']
+Agent,I found an American Airlines flight with 1 layover that departs at 1:40 pm and it costs $253 per person.,['sys-offer']
+User,What airport does it land at?,['request']
+Agent,It lands at McCarran International Airport.,['inform']
+User,Did you say this was for 2 people?,['request']
+Agent,This is for 1 person.,['inform']
+User,That works. Can you find round trip tickets?,"['inform', 'ack']"
+Agent,When are you returning?,['request']
+User,I want to get back on March 9th.,['inform']
+Agent,Search revealed 1 flight. It is an American Airlines flight that departs at 1:40 pm and the second flight departs at 1:55 pm. It costs $454 per person.,['sys-offer']
+User,Does the flight land the next day?,['request']
+Agent,It arrives on the same day.,['inform']
+User,Thanks a lot.,['ack']
+Agent,Do you need anything more?,['reqalts']
+User,"No, that is all. Thanks.","['user-negate', 'thank_you']"
+Agent,Have a fantastic day.,['bye']
