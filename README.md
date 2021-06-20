@@ -50,3 +50,65 @@ python toda-bert_finetune.py
 </p>
 
 <p align="center"><b>Figure 2:</b> The TODA-BERT-filter architecture, which fine-tunes TODA-BERT and post-filters outputs to only include those relevant for the target dataset.</p>
+
+## Results 
+The following table shows micro and macro-F1 scores achieved when fine-tuning on each of the pre-training datasets. The dataset being fine-tuned on was left out from pre-training.
+
+<table>
+  <tr>
+    <td></td>
+    <td colspan="2" align="center">DSTC</td>
+    <td colspan="2" align="center">M2M</td>
+    <td colspan="2" align="center">Frames</td>
+    <td colspan="2" align="center">SGD</td>
+    <td colspan="2" align="center">E2E</td>
+    <td colspan="2" align="center">MWOZ</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>micro</td>
+    <td>macro</td>
+    <td>micro</td>
+    <td>macro</td>
+    <td>micro</td>
+    <td>macro</td>
+    <td>micro</td>
+    <td>macro</td>
+    <td>micro</td>
+    <td>macro</td>
+    <td>micro</td>
+    <td>macro</td>
+  </tr>
+  <tr>
+    <td>BERT</td>
+    <td>98.10</td>
+    <td>74.35</td>
+    <td>94.29</td>
+    <td>82.46</td>
+    <td>79.35</td>
+    <td>52.58</td>
+    <td>92.81</td>
+    <td>90.20</td>
+    <td>91.03</td>
+    <td>47.27</td>
+    <td>97.85</td>
+    <td>38.40</td>
+  </tr>
+   <tr>
+    <td>TODA-BERT-add</td>
+    <td>98.15</td>
+    <td>81.13</td>
+    <td>93.81</td>
+    <td>85.80</td>
+    <td>78.09</td>
+    <td>51.25</td>
+    <td>92.87</td>
+    <td>90.31</td>
+    <td>90.89</td>
+    <td>48.44</td>
+    <td>97.78</td>
+    <td>42.17</td>
+  </tr>
+</table>
+
+Results can be reproduced by fine-tuning the respective leave-one-out pre-trained models available from [here](https://drive.google.com/file/d/1-5XPj_z7tFhuoCFfAiz8okO_EyMFI8Sx/view?usp=sharing). Domain information was stripped from the labels in MultiWOZ 2.3 resulting in 12 user acts. The test set of DSTC 2 was used for the combined dataset of DSTC 2 and 3.
